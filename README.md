@@ -75,6 +75,19 @@ The "onEventHandler" Lambda will have the following:
 <br />
 <br />
 
-**All `aws-sdk-js` requests in the Lambda should now be routed through a proxy.**
+**6. Confirm the upload was successful**
+
+- A `node_modules` directory is present.
+- The `common.js` file now configures the proxy agent.
+- "Changes deployed" status appears at the top of the editor.
+
+<br />
+<kbd>
+<img src="docs/aws-console-uploaded-result.png" width="800px" />
+</kbd>
+<br />
+<br />
+
+**All `aws-sdk-js` requests in the Lambda should now be routed through a proxy. Once the official fix is released this Lambda will be overwritten on the next `cdk deploy`.**
 
 For details on the issue and official fix see [this PR](https://github.com/aws/aws-cdk/pull/16657)
