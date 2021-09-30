@@ -45,8 +45,10 @@ $ ./bundle.sh
 
 **3. Locate the EKS's "onEventHandler" Lambda function in the [AWS Console](https://console.aws.amazon.com/lambda/home#/functions)**
 
-The "onEventHandler" Lambda will match the following features:
+The "onEventHandler" Lambda will have the following:
+
 Function name: `<STACK_NAME>-OnEventHandler42BEBAE0-jr7uixstq45a`
+
 Description: `onEvent handler for EKS cluster resource provider`
 
 <br />
