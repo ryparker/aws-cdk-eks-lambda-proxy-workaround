@@ -1,2 +1,2 @@
-build.sh
-.no-packagejson-validator
+*
+!/handler

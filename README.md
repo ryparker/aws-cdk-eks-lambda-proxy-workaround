@@ -74,3 +74,7 @@ The "onEventHandler" Lambda will have the following:
 </kbd>
 <br />
 <br />
+
+**All `aws-sdk-js` requests in the Lambda should now be routed through a proxy.**
+
+For details on the issue and official fix see [this PR](https://github.com/aws/aws-cdk/pull/16657)
