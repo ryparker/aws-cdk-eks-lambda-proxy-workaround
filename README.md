@@ -47,9 +47,8 @@ $ ./bundle.sh
 
 The "onEventHandler" Lambda will have the following:
 
-Function name: `<STACK_NAME>-OnEventHandler42BEBAE0-jr7uixstq45a`
-
-Description: `onEvent handler for EKS cluster resource provider`
+- Function name: `<STACK_NAME>-OnEventHandler42BEBAE0-jr7uixstq45a`
+- Description: `onEvent handler for EKS cluster resource provider`
 
 <br />
 <kbd>
