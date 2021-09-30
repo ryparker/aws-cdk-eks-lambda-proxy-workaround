@@ -1,4 +1,4 @@
-# base lambda image
+# Base lambda image
 FROM public.ecr.aws/lambda/nodejs:latest
 
 USER root
@@ -6,7 +6,7 @@ RUN mkdir -p /opt
 WORKDIR /tmp
 
 #
-# tools
+# Tools
 #
 
 RUN yum update -y \
@@ -17,10 +17,14 @@ RUN yum update -y \
 #
 RUN mkdir -p /opt/handler
 COPY /handler /opt/handler
+
+#
+# Install `http-proxy-agent` using NPM
+#
 RUN cd /opt/handler && npm install
 
 #
-# create the bundle
+# Create the bundle
 #
 
 RUN cd /opt/handler \
