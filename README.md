@@ -15,12 +15,14 @@ e.g.
 import { Cluster, KubernetesVersion } from '@aws-cdk/aws-eks';
 import { Port } from '@aws-cdk/aws-ec2';
 
+...
+
 const cluster = new Cluster(stack, 'hello-eks', {
   vpc,
   version: KubernetesVersion.V1_21,
   placeClusterHandlerInVpc: true,
   clusterHandlerEnvironment: {
-    http_proxy: `http://user1:user1@${proxyInstance.instancePublicIp}:3128`, // Set the http_proxy environment variable to the proxy server's URL
+    http_proxy: `http://${USERNAME}:${PASSWORD}@${proxyInstance.instancePublicIp}:3128`, // Set the http_proxy environment variable to the proxy server's URL
   },
 });
 cluster.connections.allowTo(proxyInstance, Port.tcp(80), 'Allow HTTP traffic to the proxy server');
