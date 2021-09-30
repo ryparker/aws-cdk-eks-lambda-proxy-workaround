@@ -2,7 +2,7 @@
 
 Workaround for proxy support in the onEvent EKS Lambda. This workaround is necessary until [this fix](https://github.com/aws/aws-cdk/pull/16657) is released.
 
-## Workaround
+## Before you continue
 
 This workaround involves replacing the EKS's "onEventHandler" Lambda function through the AWS Console.
 
