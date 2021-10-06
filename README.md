@@ -1,5 +1,7 @@
 # aws-cdk-eks-lambda-proxy-workaround
 
+UPDATE: The fix has been released. This workaround is no longer necessary.
+
 Workaround for proxy support in the onEvent EKS Lambda. This workaround is necessary until [this fix](https://github.com/aws/aws-cdk/pull/16657) is released.
 
 ## Before you continue
